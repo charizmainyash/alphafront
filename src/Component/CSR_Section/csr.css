@@ -1,0 +1,25 @@
+.empowering-change-container {
+    background-color: #990011;
+    padding: 20px;
+  }
+  
+  .empowering-change-heading {
+    color: white;
+    text-align: center;
+  }
+  
+  .empowering-change-content {
+    /* border: 2px solid white; */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin bottom for space after body content */
+    color: white;
+    opacity: 1; /* Initially set opacity to 1 */
+    transition: opacity 0.5s, color 0.5s; /* Add transition for smooth animation */
+    font-size: 1.5rem;
+  }
+  
+  .empowering-change-content:hover {
+    opacity: 1; /* Reduce opacity on hover */
+    color: rgb(249, 247, 247); /* Change color to green on hover */
+  }
