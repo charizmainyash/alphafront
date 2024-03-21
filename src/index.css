@@ -14,6 +14,14 @@
   src: url("./src/glacial-indifference/Righteous-Regular.ttf");
 }
 
+.popmodel{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -58,6 +66,23 @@
   line-height: 1;
   text-decoration: none;
   transition: color .2s, background-color .2s cubic-bezier(.165, .84, .44, 1);
+}
+
+.button-red {
+  background-color: #990011;
+  color: white;
+  border: 1px solid #990011;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 8px 16px; /* Increased padding for larger button */
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button-red:hover {
+  background-color: black;
+  color: white;
 }
 
 .button-custom-dashed{
@@ -315,6 +340,12 @@ h1{
   .s-main-header-text{
     font-size: 4rem;
   }
+  .list-item{
+    font-size: 0.7rem;
+  }
+  .career_content{
+    font-size: 0.7rem;
+  }
 }
 
 
@@ -444,6 +475,10 @@ h1{
     font-size: 2rem;
     margin: 35px;
   }
+  .career-heading{
+    font-size: 1.7rem;
+  }
+  
   
 
 }
@@ -464,18 +499,40 @@ h1{
 }
 }
 
+@media(max-width:556px){
+  .list-item{
+    font-size: 0.5rem;
+  }
+  .career_content{
+    font-size: 0.5rem;
+  }
+}
+
 @media (max-width: 538px){
   .s-text-anim{
     text-align: left;
     width: 100%;
   }
-  /* .featured_video_home_section{
-    width: 100%;
-  } */
+  .pop_heading{
+    font-size: 0.8rem;
+  }
+  .pop_content{
+    font-size: 0.6rem;
+  }
+  .pop_label{
+    font-size: 0.5rem;
+  }
+  .pop_button{
+    font-size: 0.9rem;
+  }
+  
 }
 @media (max-width: 500px){
   .s-main-header-text{
     font-size: 3.5rem;
+  }
+  .header-link{
+    font-size: 0.4rem;
   }
   
 }
@@ -489,6 +546,28 @@ h1{
   .brand_heading{
     font-size: 2.6rem;
   }
+}
+@media(max-width: 455px) {
+  .pop_heading{
+    font-size: 0.6rem;
+  }
+  .pop_content{
+    font-size: 0.4rem;
+  }
+  
+}
+@media(max-width: 434px)
+{
+  .career-heading{
+    font-size: 1rem;
+  }
+  .list-item{
+    font-size: 0.4rem;
+  }
+  .career_content{
+    font-size: 0.3rem;
+  }
+  
 }
 
 @media (max-width: 413px){
@@ -588,6 +667,21 @@ h1{
     font-size: 0.8rem;
   }
 }
+@media(max-width: 373px)
+{
+  .pop_heading{
+    font-size: 0.5rem;
+  }
+  .pop_content{
+    font-size: 0.4rem;
+  }
+  .pop_label{
+    font-size: 0.4rem;
+  }
+  .pop_button{
+    font-size: 0.5rem;
+  }
+}
 @media (max-width: 356px)
 {
   .brand_heading{
@@ -611,6 +705,18 @@ h1{
   }
   .s-main-header-text{
     font-size: 2rem;
+  }
+  .pop_heading{
+    font-size: 0.4rem;
+  }
+  .pop_content{
+    font-size: 0.3rem;
+  }
+  .pop_label{
+    font-size: 0.3rem;
+  }
+  .pop_button{
+    font-size: 0.5rem;
   }
 
 

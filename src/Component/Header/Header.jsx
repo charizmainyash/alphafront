@@ -47,6 +47,11 @@ export const Header = () => {
               className="button-custom"
             >Contact
             </NavLink>
+            <NavLink
+              to={"/career"}
+              className="button-custom"
+            >Career
+            </NavLink>
           </div>
         </div>
 

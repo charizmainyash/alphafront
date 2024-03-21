@@ -9,24 +9,37 @@ import "./Home.css";
 import { WorkWithUs } from "../WorkWithUs/WorkWithUs";
 import { Footer } from "../Footer/Footer";
 import { EmpoweringChange } from "../CSR_Section/CSR_Section";
+import { PopupForm } from "../PopForm/PopUpForm";
 
-export const Home = () => (
-  <div className="main">
-    <Header />
-    <div className="content-wrapper">
-      <HeaderVideo />
-      <div className="scrollable-content">
-        <Content />
-        <MovingLogos />
-        <Featured />
-        <EmpoweringChange />
-        <Service />
-        <WorkWithUs />
-        <Footer />
+export const Home = ({ onClose }) => {
+  const [showmodel, setShowmodel] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowmodel(true);
+    },4000)
+  },[])
+
+  return (
+    <div className="main">
+      <button onClick={() => setShowmodel(true)}>Show model</button>
+      <Header />
+      <div className="content-wrapper">
+        <HeaderVideo />
+        <div className="scrollable-content">
+          <Content />
+          <MovingLogos />
+          <Featured />
+          <EmpoweringChange />
+          <Service />
+          <WorkWithUs />
+          <Footer />
+        </div>
       </div>
+      {showmodel && <PopupForm onClose={() => setShowmodel(false)} />}
     </div>
-  </div>
-);
+  );
+};
 
 
 

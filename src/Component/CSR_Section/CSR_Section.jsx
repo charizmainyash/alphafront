@@ -8,9 +8,9 @@ export const EmpoweringChange = () => {
         EMPOWERING CHANGE
     </h1>
     <div className="empowering-change-content text-center">
-      <p>Every Purchase Contributes to a Better World.</p>
+      <p>Every purchase contributes to a better world.</p>
       <p>
-      <strong>5% OF OUR PROFITS</strong> Are Donated to Support NGOs and Social Welfare Initiatives.
+      <strong>5% OF OUR PROFITS</strong> are donated to support NGOs and Social welfare initiatives.
       </p>
     </div>
     </div>
