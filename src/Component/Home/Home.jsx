@@ -22,7 +22,7 @@ export const Home = ({ onClose }) => {
 
   return (
     <div className="main">
-      <button onClick={() => setShowmodel(true)}>Show model</button>
+      {/* <button onClick={() => setShowmodel(true)}>Show model</button> */}
       <Header />
       <div className="content-wrapper">
         <HeaderVideo />
